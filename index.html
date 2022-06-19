@@ -1,92 +1,94 @@
 <html>
 
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 </head>
 <style>
-	.material-symbols-outlined {
-	  font-variation-settings:
-	  'FILL' 0,
-	  'wght' 400,
-	  'GRAD' 0,
-	  'opsz' 48
-	}
-	#console {
-		border: 20px solid black;
-		align-items: center;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    #console {
+        border: 20px solid black;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-	#console-text {
-		font-family: 'League Spartan', sans-serif;
-		font-size: 50px;
-		padding: auto;
-	}
+    #console-text {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 50px;
+        padding: auto;
+    }
 
-	#heading {
-		padding-left: 50px;
-		font-size: 50px;
-	}
+    #heading {
+        padding-left: 50px;
+        font-size: 50px;
+    }
 
-	#para {
-		padding-left: 50px;
-		font-size: 20px;
-		font-weight: 300;
-	}
+    #para {
+        padding-left: 50px;
+        font-size: 20px;
+        font-weight: 300;
+    }
 
-	#sec2 {
-		border: 10px solid white;
-		padding-bottom: 20px;
-	}
+    #sec2 {
+        border: 10px solid white;
+        padding-bottom: 20px;
+    }
 
-	body {
-		padding: 25px;
-		background-color: white;
-		--accent: black;
-		--text: white;
-		color: black;
-		font-size: 25px;
-	}
+    body {
+        padding: 25px;
+        background-color: white;
+        --accent: black;
+        --text: white;
+        color: black;
+        font-size: 25px;
+    }
 
-	.dark-mode {
-		background-color: black;
-		--accent: white;
-		--text: black;
-		color: white;
-	}
-	button{
-		float: right;
-		background-color: var(text);
-		color: var(accent);
-		border: none;
-		padding: 10px;
-		font-size: 20px;
-		font-family: 'League Spartan', sans-serif;
-		border-radius: 10px;
-		cursor: pointer;
-	}
+    .dark-mode {
+        background-color: black;
+        --accent: white;
+        --text: black;
+        color: white;
+    }
+    button{
+        float: right;
+        background-color: var(text);
+        color: var(accent);
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        font-family: 'League Spartan', sans-serif;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 </style>
 <script>
-	function myFunction() {
-	  var element = document.body;
-	  element.classList.toggle("dark-mode");
-	} 
+    function consoleFunction() {
+        window.open("http://tatti.ml/", "popupWindow", "width=600,height=600,scrollbars=yes");
+    } 
+    function modeFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    } 
 </script>
 <body>
-	<button onclick="myFunction()"><span class="material-symbols-outlined">dark_mode</span></button>
-	<div id="sec2">
-		<div id="console-text">
-			<h2 id="heading">CONSOLE</h2>
-			<p id="para">To use the console type in <br><i>'mclog'</i><br> command in the terminal. <br>
-			<br>To exit the mincraft prompt use the keyboard shortcut <br><i>`ctrl+a+d`</i></p>
-			<iframe src="http://172.105.53.40:420/" id="console" width="95%" height="600" scrolling="no">Browser not
-				compatible. </iframe>
-		</div>
+    <button onclick="consoleFunction()"><span class="material-symbols-outlined">terminal</span></button>
+    <button onclick="modeFunction()"><span class="material-symbols-outlined">dark_mode</span></button>
+    <div id="sec1">
+        <div id="console-text">
+            <h2 id="heading">The Tatti Server</h2>
+           
+        </div>
 </body>
 
 </html>
