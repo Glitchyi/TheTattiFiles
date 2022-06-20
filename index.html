@@ -15,54 +15,17 @@
       'GRAD' 0,
       'opsz' 100
     }
-    #nav{
-        position: fixed;
-        top: 10%;
-        right: 10%px; 
-    }
-    #console {
-        border: 20px solid black;
-        align-items: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    #console-text {
-        font-family: 'League Spartan', sans-serif;
-        font-size: 50px;
-        padding: auto;
-    }
 
-    #heading {
-        padding-left: 50px;
-    }
-
-    #para {
-        padding-left: 50px;
-        font-size: 20px;
-        font-weight: 300;
-    }
-
-    #sec2 {
-        border: 10px solid white;
-        padding-bottom: 20px;
-    }
+   
 
     body {
         padding: 25px;
-        background-color: white;
+        background-color: black;
         --accent: black;
         --text: white;
         color: black;
         font-size: 25px;
-    }
-
-    .dark-mode {
-        background-color: black;
-        --accent: white;
-        --text: black;
-        color: white;
     }
     button{
         background-color: var(text);
@@ -79,25 +42,13 @@
     function consoleFunction() {
         window.open("http://tatti.ml/console", "popupWindow", "width=600,height=600,scrollbars=yes");
     } 
-    function modeFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
+    function mapFunction() {
+        window.open("http://172.105.53.40:6969/","width=90%,height=600,scrollbars=yes");
     } 
 </script>
 <body>
-    <div id="nav">
         <button onclick="consoleFunction()"><span class="material-symbols-outlined">terminal</span></button>
-        <button onclick="modeFunction()"><span class="material-symbols-outlined">dark_mode</span></button>
-    </div>
-    <div id="sec1">
-        <div id="console-text">
-            <h1 id="heading">The Tatti Server</h1>
-            <iframe src="http://172.105.53.40:6969/" id="console" width="95%" height="600" scrolling="no">Browser not
-                compatible. </iframe>
-            <iframe src="https://neerajrmenonxiia.wixsite.com/tatti" id="console" width="95%" height="600" scrolling="no">Browser not
-                compatible. </iframe>
-           
-        </div>
-</body>
-
+        <button onclick="mapFunction()"><span class="material-symbols-outlined">map</span></button>
+        <iframe src="https://neerajrmenonxiia.wixsite.com/tatti" id="console" width="100%" height="100%">Browser not compatible. </iframe>
+   
 </html>

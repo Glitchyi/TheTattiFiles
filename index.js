@@ -25,6 +25,10 @@ app.get('/console', (req, res) => {
   res.sendFile(__dirname+'/console.html');
 })
 
+app.get('/map', (req, res) => {
+  res.sendFile(__dirname+'/map.html');
+})
+
 // var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
 var httpServer = http.createServer(app);
